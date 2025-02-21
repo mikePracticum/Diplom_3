@@ -5,23 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3683ff33-2d52-4e6a-b5e4-e9085ac18ea9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/ConstructorPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/LogoutPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/ProfilePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/RegistrationPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/ConstructorTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/HomeTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/LoginTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/LogoutTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/ProfileTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/RegistrationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ConstructorPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ConstructorPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/ConstructorTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/ConstructorTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/HomeTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/HomeTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/LoginTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/LogoutTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/LogoutTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/ProfileTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/ProfileTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/RegistrationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/RegistrationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +57,10 @@
     "JUnit.ConstructorTests.redirectToBunsSection.executor": "Run",
     "JUnit.ConstructorTests.redirectToConstructor.executor": "Run",
     "JUnit.ConstructorTests.redirectToSaucesSection.executor": "Run",
+    "JUnit.HomeTests.executor": "Run",
+    "JUnit.LoginTests.LoginFromForgotPasswordButton.executor": "Run",
+    "JUnit.LoginTests.LoginFromMainPageAccountButton.executor": "Run",
+    "JUnit.LoginTests.LoginFromRegistrationPageButton.executor": "Run",
     "JUnit.LoginTests.executor": "Run",
     "JUnit.LogoutTests.executor": "Run",
     "JUnit.ProfileTests.executor": "Run",
@@ -77,7 +72,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "develop3",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/mihailkrikun/projects/Diplom/Diplom_3",
+    "last_opened_file_path": "/Users/mihailkrikun/projects/Диплом_Михаил_Крикун_41/Diplom/Diplom_3",
     "onboarding.tips.debug.path": "/Users/mihailkrikun/projects/Diplom/Diplom_3/src/main/java/org/example/Main.java",
     "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
@@ -115,22 +110,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ConstructorTests.redirectToConstructor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Diplom_3" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.ConstructorTests" />
-      <option name="METHOD_NAME" value="redirectToConstructor" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ConstructorTests.redirectToSaucesSection" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Diplom_3" />
       <extension name="coverage">
@@ -147,7 +126,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RegistrationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginTests.LoginFromForgotPasswordButton" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Diplom_3" />
       <extension name="coverage">
         <pattern>
@@ -156,18 +135,52 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.RegistrationTests" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="tests.LoginTests" />
+      <option name="METHOD_NAME" value="LoginFromForgotPasswordButton" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTests.LoginFromMainPageAccountButton" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.LoginTests" />
+      <option name="METHOD_NAME" value="LoginFromMainPageAccountButton" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTests.LoginFromRegistrationPageButton" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.LoginTests" />
+      <option name="METHOD_NAME" value="LoginFromRegistrationPageButton" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ConstructorTests.redirectToBunsSection" />
         <item itemvalue="JUnit.ConstructorTests.redirectToSaucesSection" />
-        <item itemvalue="JUnit.ConstructorTests.redirectToConstructor" />
-        <item itemvalue="JUnit.RegistrationTests" />
+        <item itemvalue="JUnit.ConstructorTests.redirectToBunsSection" />
+        <item itemvalue="JUnit.LoginTests.LoginFromMainPageAccountButton" />
+        <item itemvalue="JUnit.LoginTests.LoginFromForgotPasswordButton" />
+        <item itemvalue="JUnit.LoginTests.LoginFromRegistrationPageButton" />
       </list>
     </recent_temporary>
   </component>

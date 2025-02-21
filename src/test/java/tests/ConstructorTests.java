@@ -2,11 +2,12 @@ package tests;
 
 import io.qameta.allure.Step;
 import org.junit.*;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import pages.ConstructorPage;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 public class ConstructorTests {
@@ -49,24 +50,23 @@ public class ConstructorTests {
     @Test
     public void redirectToBunsSection() {
         constructorPage.clickSaucesButton();
-
         constructorPage.clickBunsButton();
-
-        constructorPage.isBunsSectionDisplayed();
+        //заведомо испортил ожидание, тест упадет, так как ждем 'Мулки' а должно быть 'Булки'
+        assertTrue("Пользователь должен увидеть заголовок 'Булки'.", driver.findElement(By.xpath("//h2[contains(text(), 'Мулки')]")).isDisplayed());
     }
 
     @Step("Переход на секцию Соусов")
     @Test
     public void redirectToSaucesSection() {
         constructorPage.clickSaucesButton();
-        constructorPage.isSaucesSectionDisplayed();
+        assertTrue("Пользователь должен увидеть заголовок 'Соусы'.", driver.findElement(By.xpath("//h2[contains(text(), 'Соусы')]")).isDisplayed());
     }
 
     @Step("Переход на секцию Начинок")
     @Test
     public void redirectToFillingsSection() {
         constructorPage.clickFillingsButton();
-        constructorPage.isFillingsSectionDisplayed();
+        assertTrue("Пользователь должен увидеть заголовок 'Начинки'.", driver.findElement(By.xpath("//h2[contains(text(), 'Начинки')]")).isDisplayed());
     }
 
 }

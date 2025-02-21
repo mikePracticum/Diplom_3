@@ -12,7 +12,6 @@ public class HomeTests {
     private WebDriver driver;
     private LoginPage loginPage;
     private HomePage homePage;
-    private String baseUrl = "https://stellarburgers.nomoreparties.site/";
     private String loginUrl = "https://stellarburgers.nomoreparties.site/login";
     private String email = "km@yandex.ru";
     private String password = "123456";
@@ -39,14 +38,12 @@ public class HomeTests {
 
     @Test
     public void testRedirectToConstructorFromProfile() {
-        //driver.get(profileUrl);
         homePage.clickConstructorButton();
         assertTrue(homePage.isConstructorPageDispalyed());
     }
 
     @Test
     public void testRedirectToConstructorFromLogo() {
-        //driver.get(profileUrl);
         homePage.clickLogo();
         assertTrue(homePage.isConstructorPageDispalyed());
     }

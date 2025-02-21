@@ -1,17 +1,15 @@
 package tests;
 
 import org.junit.*;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import pages.LoginPage;
-import pages.ProfilePage;
-
-import java.time.Duration;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import static org.junit.Assert.assertEquals;
+import pages.LoginPage;
+import pages.ProfilePage;
+import java.time.Duration;
 
-import static org.junit.Assert.assertTrue;
 
 public class ProfileTests {
     private WebDriver driver;
@@ -48,7 +46,7 @@ public class ProfileTests {
         loginPage.login(email, password);
 
         // Проверяем, что мы на главной странице
-        assertTrue("Пользователь должен быть перенаправлен на главную страницу.", driver.getCurrentUrl().equals(baseUrl));
+        assertEquals("Пользователь должен быть перенаправлен на главную страницу.", true, driver.getCurrentUrl().equals(baseUrl));
 
         // Нажимаем на "Личный кабинет"
         profilePage.clickAccountButton();
@@ -58,7 +56,7 @@ public class ProfileTests {
         wait.until(ExpectedConditions.urlToBe(profileUrl));
 
         // Проверяем, что мы на странице профиля
-        assertTrue("Пользователь должен быть на странице профиля.", profilePage.isProfilePageDisplayed());
+        assertEquals("Пользователь должен быть на странице профиля.", true, profilePage.isProfilePageDisplayed());
     }
 
 }

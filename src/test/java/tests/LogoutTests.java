@@ -1,25 +1,22 @@
 package tests;
 
 import org.junit.*;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import static org.junit.Assert.assertEquals;
 import pages.LoginPage;
 import pages.LogoutPage;
 import pages.ProfilePage;
-
 import java.time.Duration;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
-import static org.junit.Assert.assertTrue;
 
 public class LogoutTests {
     private WebDriver driver;
     private LoginPage loginPage;
     private ProfilePage profilePage;
     private LogoutPage logoutPage;
-    private String baseUrl = "https://stellarburgers.nomoreparties.site/";
     private String loginUrl = "https://stellarburgers.nomoreparties.site/login";
     private String profileUrl = "https://stellarburgers.nomoreparties.site/account/profile";
     private String logoutUrl = "https://stellarburgers.nomoreparties.site/login";
@@ -67,7 +64,7 @@ public class LogoutTests {
 
         String currentUrl = driver.getCurrentUrl();
         System.out.println("Current URL: " + currentUrl); // Лог текущего URL для отладки
-        assertTrue("Пользователь должен быть перенаправлен на страницу логина/логаута.", currentUrl.equals(logoutUrl));
+        assertEquals("Пользователь должен быть перенаправлен на страницу логина/логаута.", true, currentUrl.equals(logoutUrl));
     }
 
 }

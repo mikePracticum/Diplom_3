@@ -1,19 +1,13 @@
 package tests;
 
 import org.junit.*;
-import org.junit.runner.RunWith;
-import org.junit.runners.Parameterized;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import pages.LoginPage;
-import pages.RegistrationPage;
-import io.qameta.allure.Step;
-
 import java.time.Duration;
-
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
@@ -48,6 +42,9 @@ public class LoginTests {
         driver.findElement(By.xpath("//button[contains(text(),'Войти в аккаунт')]")).click();
         loginPage.login(email, password);
 
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.urlToBe("https://stellarburgers.nomoreparties.site/"));
+
         // Проверка, что мы перенаправлены на главную страницу
         assertTrue("Пользователь должен быть перенаправлен на главную страницу.", isHomePageDisplayed());
     }
@@ -76,7 +73,7 @@ public class LoginTests {
         loginPage.login(email, password);
 
         // Проверка, что мы перенаправлены на главную страницу
-        assertTrue("Пользователь должен быть перенаправлен на главную страницу.", isHomePageDisplayed());
+        assertEquals("Пользователь должен быть перенаправлен на главную страницу.", true, isHomePageDisplayed());
     }
 
     @Test
@@ -91,7 +88,7 @@ public class LoginTests {
     }
 
     private boolean isHomePageDisplayed() {
-        // Проверка URL или текста заголовка
-        return driver.getCurrentUrl().equals(baseUrl) || driver.findElement(By.tagName("h1")).getText().equals("Соберите бургер");
+        // Проверка URL
+        return driver.getCurrentUrl().equals(baseUrl);
     }
 }
