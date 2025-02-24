@@ -6,6 +6,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+
 import pages.LoginPage;
 import pages.ProfilePage;
 import java.time.Duration;
@@ -56,7 +58,7 @@ public class ProfileTests {
         wait.until(ExpectedConditions.urlToBe(profileUrl));
 
         // Проверяем, что мы на странице профиля
-        assertEquals("Пользователь должен быть на странице профиля.", true, profilePage.isProfilePageDisplayed());
+        assertTrue("Пользователь должен быть на странице профиля.", profilePage.isProfilePageDisplayed());
     }
 
 }

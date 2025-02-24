@@ -16,7 +16,6 @@ import java.util.Collection;
 import java.util.UUID;
 
 import static io.restassured.RestAssured.given;
-import static org.junit.Assert.assertTrue;
 
 @RunWith(Parameterized.class)
 public class RegistrationTests {

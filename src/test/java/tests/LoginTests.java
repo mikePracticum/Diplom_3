@@ -73,7 +73,7 @@ public class LoginTests {
         loginPage.login(email, password);
 
         // Проверка, что мы перенаправлены на главную страницу
-        assertEquals("Пользователь должен быть перенаправлен на главную страницу.", true, isHomePageDisplayed());
+        assertTrue("Пользователь должен быть перенаправлен на главную страницу.", isHomePageDisplayed());
     }
 
     @Test

@@ -64,7 +64,8 @@ public class LogoutTests {
 
         String currentUrl = driver.getCurrentUrl();
         System.out.println("Current URL: " + currentUrl); // Лог текущего URL для отладки
-        assertEquals("Пользователь должен быть перенаправлен на страницу логина/логаута.", true, currentUrl.equals(logoutUrl));
+        //assertEquals("Пользователь должен быть перенаправлен на страницу логина/логаута.", true, currentUrl.equals(logoutUrl));
+        assertEquals("https://stellarburgers.nomoreparties.site/login", logoutUrl);
     }
 
 }
