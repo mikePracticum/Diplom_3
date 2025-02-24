@@ -4,20 +4,37 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3683ff33-2d52-4e6a-b5e4-e9085ac18ea9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="3683ff33-2d52-4e6a-b5e4-e9085ac18ea9" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;mikePracticum&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:mikePracticum/Diplom_3.git&quot;,
+    &quot;accountId&quot;: &quot;ce106aac-718c-4d86-8461-2d45f74982b3&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2sMWueGQfhObJDbck9OT4FoUg4a" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -26,12 +43,140 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.All in Diplom_3.executor": "Run",
+    "JUnit.ConstructorTests.executor": "Run",
+    "JUnit.ConstructorTests.redirectToBunsSection.executor": "Run",
+    "JUnit.ConstructorTests.redirectToConstructor.executor": "Run",
+    "JUnit.ConstructorTests.redirectToSaucesSection.executor": "Run",
+    "JUnit.HomeTests.executor": "Run",
+    "JUnit.LoginTests.LoginFromForgotPasswordButton.executor": "Run",
+    "JUnit.LoginTests.LoginFromMainPageAccountButton.executor": "Run",
+    "JUnit.LoginTests.LoginFromRegistrationPageButton.executor": "Run",
+    "JUnit.LoginTests.executor": "Run",
+    "JUnit.LogoutTests.executor": "Run",
+    "JUnit.LogoutTests.testNavigateToProfileFromMainPage.executor": "Run",
+    "JUnit.ProfileTests.executor": "Run",
+    "JUnit.ProfileTests.testNavigateToProfileFromMainPage.executor": "Run",
+    "JUnit.RegistrationTest.executor": "Run",
+    "JUnit.RegistrationTests.executor": "Run",
+    "Maven.Diplom_3 [allure:serve].executor": "Run",
+    "Maven.Diplom_3 [test].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "develop3",
     "kotlin-language-version-configured": "true",
-    "onboarding.tips.debug.path": "/Users/mihailkrikun/projects/Diplom/Diplom_3/src/main/java/org/example/Main.java"
+    "last_opened_file_path": "/Users/mihailkrikun/projects/Диплом_Михаил_Крикун_41/Diplom/Diplom_3",
+    "onboarding.tips.debug.path": "/Users/mihailkrikun/projects/Diplom/Diplom_3/src/main/java/org/example/Main.java",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
 }]]></component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn test" />
+      <command value="mvn allure:serve" />
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.ProfileTests.testNavigateToProfileFromMainPage">
+    <configuration name="All in Diplom_3" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+      <module name="Diplom_3" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConstructorTests.redirectToBunsSection" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.ConstructorTests" />
+      <option name="METHOD_NAME" value="redirectToBunsSection" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConstructorTests.redirectToSaucesSection" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.ConstructorTests" />
+      <option name="METHOD_NAME" value="redirectToSaucesSection" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTests.LoginFromMainPageAccountButton" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.LoginTests" />
+      <option name="METHOD_NAME" value="LoginFromMainPageAccountButton" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LogoutTests.testNavigateToProfileFromMainPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.LogoutTests" />
+      <option name="METHOD_NAME" value="testNavigateToProfileFromMainPage" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProfileTests.testNavigateToProfileFromMainPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.ProfileTests" />
+      <option name="METHOD_NAME" value="testNavigateToProfileFromMainPage" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ProfileTests.testNavigateToProfileFromMainPage" />
+        <item itemvalue="JUnit.LogoutTests.testNavigateToProfileFromMainPage" />
+        <item itemvalue="JUnit.ConstructorTests.redirectToSaucesSection" />
+        <item itemvalue="JUnit.ConstructorTests.redirectToBunsSection" />
+        <item itemvalue="JUnit.LoginTests.LoginFromMainPageAccountButton" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
