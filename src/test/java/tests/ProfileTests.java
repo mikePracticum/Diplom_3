@@ -48,7 +48,7 @@ public class ProfileTests {
         loginPage.login(email, password);
 
         // Проверяем, что мы на главной странице
-        assertEquals("Пользователь должен быть перенаправлен на главную страницу.", true, driver.getCurrentUrl().equals(baseUrl));
+        assertEquals("Пользователь должен быть перенаправлен на главную страницу.", driver.getCurrentUrl());
 
         // Нажимаем на "Личный кабинет"
         profilePage.clickAccountButton();
